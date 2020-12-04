@@ -1,0 +1,11 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "426Y57V47F.io.dcloud.examapp",
+                "paths": ["/ulink/*"]
+            }
+        ]
+    }
+}
